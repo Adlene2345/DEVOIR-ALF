@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<p id="text">var1 = 10; <br> var2 = var1 + 7;</p>
+ 
+<button onclick="myFunction()">Parse</button>
+ 
+<p id="demo"></p>
+ 
+<script>
+function myFunction() {
+ 
+    var regex = /[a-zA-Z\d]+\s\=/;
+ 
+    text = document.getElementById("text").innerHTML.split('<br>');
+ 
+ 
+    //var variable = str.search(regex);
+ 
+    var valueTest = regex.exec(text[0]);
+ 
+    document.write(valueTest);
+   
+}
+</script>
+ 
+</body>
+</html>
