@@ -1,0 +1,6 @@
+start = "BO$$ $$\n" SALUT CMVT SUPER
+SALUT ="SALUT " LETTRES " $$\n"
+CMVT = "CMVT ? " LETTRES " $$\n"
+SUPER = "SUPER ? " beah:LETTRES " $$ " {return (beah=="BO$$")?"I hate ALF!!!":beah + ", cool!";}
+LETTRES "lettres" 
+  = char:[a-zA-Z]+{return char.join("");}
